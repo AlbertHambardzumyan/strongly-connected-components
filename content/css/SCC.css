@@ -1,0 +1,264 @@
+body {
+    margin: 0;
+}
+
+span#back {
+    color: #A2B4C7;
+    position: fixed;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    visibility: hidden;
+}
+
+/** Header and Logo **/
+#header {
+    height: 70px;
+    position: relative;
+    width: 980px;
+    margin: 0 auto;
+}
+
+.headerLogo {
+    color: #000000;
+    text-decoration: none;
+    font-size: 24px;
+
+    position: absolute;
+    width: 320px;
+    height: 64px;
+    top: 15px;
+    left: 0;
+}
+
+/* Menu */
+#menuBG {
+    background-color: #F1F1F1;
+    width: 980px;
+    margin: 5px auto;
+}
+
+#menu {
+    height: 60px; /*mine140*/
+    position: relative;
+    width: 980px;
+    margin: 0 auto;
+}
+
+/**** Tabs ****/
+#menuTab {
+    position: absolute;
+    bottom: 10px;
+    right: 190px;
+}
+
+#menuTab ul, #menuTab li, #menuTab span, #menuTab a {
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    color: #000000;
+}
+
+#menuTab a {
+    cursor: pointer;
+    color: #ffffff;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    min-width: 35px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold; /*text-shadow: 0 -1px 0 #333333;*/
+}
+
+#menuTab ul {
+    list-style: none;
+}
+
+.menu_tab {
+    float: left;
+}
+
+.menuTab_separator {
+    width: 1px;
+    height: 34px;
+    background: -moz-linear-gradient(top, rgba(121, 0, 0, 0) 0%, rgba(121, 0, 0, 1) 50%, rgba(121, 0, 0, 0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(121, 0, 0, 0)), color-stop(50%, rgba(121, 0, 0, 1)), color-stop(100%, rgba(121, 0, 0, 0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(121, 0, 0, 0) 0%, rgba(121, 0, 0, 1) 50%, rgba(121, 0, 0, 0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(121, 0, 0, 0) 0%, rgba(121, 0, 0, 1) 50%, rgba(121, 0, 0, 0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(121, 0, 0, 0) 0%, rgba(121, 0, 0, 1) 50%, rgba(121, 0, 0, 0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(121, 0, 0, 0) 0%, rgba(121, 0, 0, 1) 50%, rgba(121, 0, 0, 0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00790000', endColorstr='#00790000', GradientType=0); /* IE6-9 */
+}
+
+#menuTab a {
+    padding: 0 20px;
+    line-height: 34px;
+    opacity: 0.7;
+}
+
+#menuTab a:hover {
+/ / opacity: 1;
+}
+
+#menuTab a#overview {
+    opacity: 1;
+}
+
+/*   end Menu*/
+
+/* Container */
+.container {
+    background-color: #F1F1F1;
+    margin: 0 auto 15px;
+    width: 960px;
+    padding: 10px;
+}
+
+.line {
+    width: inherit;
+    border-bottom: 1px solid #000000;
+}
+
+.white_block {
+    margin-top: 20px;
+    width: 970px;
+    height: 20px;
+    background-color: #ffffff;
+}
+
+/*Overview*/
+
+.container #overview1 li {
+    padding: 5px;
+}
+
+.container #overview1 li a {
+    color: #000000;
+    text-decoration: none;
+    opacity: .7;
+}
+
+.container #overview1 li a:hover {
+/ / opacity: 1;
+}
+
+.introduction_sub_container, .definitions_sub_container, .detail_sub_container, .algorithms_sub_container, .tarjan_sub_container, .kosaraju_sub_container, .path_sub_container {
+    margin-left: 15px;
+}
+
+.links, .ref, .toOverview {
+    text-decoration: none;
+    outline-style: none;
+}
+
+/* the rest of container*/
+.container #applications1, .container #resources1, .container #complexity1, .container #try_it_out1, .container #q_and_a1 {
+    display: none;
+}
+
+.container #applications1 .applications_sub_container, .container #resources1 .resources_sub_container, .container #complexity1 .complexity_sub_container, .container #try_it_out1 .try_it_out_sub_container, .container #q_and_a1 .q_and_a_sub_container {
+    margin-left: 15px;
+}
+
+/**end the rest of menu**/
+
+#figure_7_svg, #figure_6_svg, #figure_5_svg, #figure_4_svg, #figure_3_svg, #figure_2_svg, #figure_1_svg, #kosaraju_demonstration, #gabow_demonstration {
+    border: 1px solid #DEDEDE;
+}
+
+#kosaraju_demonstration_div, #gabow_demonstration_div {
+    margin-bottom: 15px;
+    margin-left: 200px;
+}
+
+div.kosaraju_demonstration_tip, div.gabow_demonstration_tip {
+    background-color: #ffffff;
+    border: 1px solid #DEDEDE;
+    height: 30px;
+    width: 500px;
+}
+
+div.kosaraju_demonstration_tip > p, div.gabow_demonstration_tip > p {
+    font-size: 15px;
+    margin: 6px 120px;
+}
+
+/*Complexity*/
+div#kos_complex, div#tar_complex, div#comparison {
+    margin-left: 15px;
+}
+
+/*Try it Out*/
+div.fr {
+    width: 925px;
+    height: 500px;
+    border: 1px solid #DEDEDE;
+    margin: auto;
+/ / float: left;
+}
+
+div.gist-readme {
+    padding: 10px;
+    height: 240px;
+    width: 580px;
+    float: left;
+    margin: 10px 10px 10px 9px;
+    background-color: #ffffff;
+    border: 1px solid #DEDEDE;
+}
+
+div.gist-readme > p {
+    line-height: 1.5em;
+    font-size: 15px;
+}
+
+#divButton {
+    float: left;
+    margin: 10px auto;
+    height: 30px;
+    width: 313px;
+}
+
+input[type="button"] {
+    margin-left: 115px; /* 60px for 2 buttons*/
+    color: #000000;
+    background-color: #ffffff;
+    height: 30px;
+    width: 70px;
+    cursor: pointer;
+    outline-style: none;
+    border-radius: 15px;
+}
+
+#divOutputMover {
+    padding: 10px;
+    border: 1px solid #DEDEDE;
+    height: 200px;
+    width: 200px; /*350*/
+    background-color: #ffffff;
+    overflow: auto;
+    display: none;
+    position: absolute;
+    z-index: 9999;
+}
+
+#buttonAndFixedText {
+
+}
+
+#divOutputFixed {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #DEDEDE;
+    height: 200px;
+    width: 293px;
+    background-color: #ffffff;
+    overflow: auto;
+}
+
+/**Resources*/
+div#resources1 a {
+    text-decoration: none;
+}
